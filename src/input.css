@@ -14,22 +14,30 @@ body {
 
 h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 14vw;
+  font-size: 10vw;
 }
 
 h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
 }
 
-p {
+h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 6vw;
+}
+
+p,
+#tag {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 3vw;
 }
 
-p .caption {
+p.projectcaption {
   font-family: "PT Serif", serif;
-  font-size: 2vw;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4vw;
 }
 
 /*************** LOGO STYLING **************/
@@ -52,11 +60,6 @@ a .PTlogo {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 6vw;
   color: #647dff;
-}
-
-img {
-  width: 90px;
-  padding-left: 1rem;
 }
 
 header {
@@ -223,6 +226,23 @@ input[type="checkbox"] {
   transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1); /* easeOutBackを緩めた感じ */
   transition-delay: 0.6s;
   transform: translateX(-100px);
+}
+
+/************ Zoom effect img  ************/
+.imgzoom {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.imgzoom img {
+  width: 100%;
+  transition: 1s all ease-in-out;
+}
+
+.imgzoom:hover img {
+  transform: scale(1.2);
 }
 
 @media (min-width: 700px) {

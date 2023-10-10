@@ -534,21 +534,119 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-7 {
   margin-bottom: 1.75rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-lg {
@@ -556,19 +654,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 *,
@@ -583,22 +676,30 @@ body {
 
 h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 14vw;
+  font-size: 10vw;
 }
 
 h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
 }
 
-p {
+h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 6vw;
+}
+
+p,
+#tag {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 3vw;
 }
 
-p .caption {
+p.projectcaption {
   font-family: "PT Serif", serif;
-  font-size: 2vw;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4vw;
 }
 
 /*************** LOGO STYLING **************/
@@ -623,11 +724,6 @@ a .PTlogo {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 6vw;
   color: #647dff;
-}
-
-img {
-  width: 90px;
-  padding-left: 1rem;
 }
 
 header {
@@ -805,6 +901,24 @@ input[type="checkbox"] {
   transform: translateX(-100px);
 }
 
+/************ Zoom effect img  ************/
+
+.imgzoom {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.imgzoom img {
+  width: 100%;
+  transition: 1s all ease-in-out;
+}
+
+.imgzoom:hover img {
+  transform: scale(1.2);
+}
+
 @media (min-width: 700px) {
   /* LOGO STYLING */
 
@@ -848,5 +962,44 @@ input[type="checkbox"] {
 
   .wrapper ul li {
     margin-top: 80px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:pr-20 {
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:pr-40 {
+    padding-right: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .lg\:pr-60 {
+    padding-right: 15rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-60 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 }
