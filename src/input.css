@@ -17,6 +17,16 @@ h1 {
   font-size: 14vw;
 }
 
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 10vw;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 3vw;
+}
+
 p .caption {
   font-family: "PT Serif", serif;
   font-size: 2vw;
