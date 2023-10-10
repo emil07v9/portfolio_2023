@@ -14,7 +14,13 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="pt-20">
+    <header>
+      <figure class="pt-5">
+        <a href="/"
+          ><span class="JakartaLogo"> Emilie</span>
+          <span class="PTlogo">Schultz</span></a
+        >
+      </figure>
       <article id="hamburgermenu">
         <label>
           <input type="checkbox" id="active" />
@@ -24,20 +30,20 @@
         <div class="wrapper">
           <ul>
             <li class="active">
-              <a href="/projects">PROJECTS</a>
+              <a class="menu" href="/projects">PROJECTS</a>
             </li>
             <li class="active">
-              <a href="/about">ABOUT</a>
+              <a class="menu" href="/about">ABOUT</a>
             </li>
             <li class="active">
-              <a href="/contact">CONTACT</a>
+              <a class="menu" href="/contact">CONTACT</a>
             </li>
           </ul>
         </div>
       </article>
     </header>
     <main>
-      <h1>Hello world!</h1>
+      <h1>Web Developer</h1>
     </main>
   </body>
 </html>
@@ -46,9 +52,12 @@
   /* header {
   	cursor: url(cursor.svg);
   } */
-  a {
-    color: #eb4d27;
+  .menu a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 6vw;
+    color: #647dff;
   }
+
   img {
     width: 90px;
     padding-left: 1rem;

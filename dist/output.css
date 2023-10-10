@@ -546,8 +546,20 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.content-center {
+  align-content: center;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .transition {
@@ -565,7 +577,7 @@ video {
 }
 
 body {
-  margin: 4vw;
+  margin-inline: 4vw;
 }
 
 h1 {
@@ -573,12 +585,43 @@ h1 {
   font-size: 14vw;
 }
 
-a {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 6vw;
-}
-
 p .caption {
   font-family: "PT Serif", serif;
   font-size: 2vw;
+}
+
+/* LOGO STYLING */
+
+a .JakartaLogo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 5vw;
+  color: #647dff;
+}
+
+a .PTlogo {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5vw;
+  color: #647dff;
+}
+
+@media (min-width: 700px) {
+  a .JakartaLogo {
+    font-size: 3vw;
+  }
+
+  a .PTlogo {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  a .JakartaLogo {
+    font-size: 2vw;
+  }
+
+  a .PTlogo {
+    font-size: 2vw;
+  }
 }
