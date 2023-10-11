@@ -44,15 +44,18 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <section id="hero" class="mb-10">
-        <h1 class="text-7xl mb-7">Web Developer</h1>
-        <h2 class="text-lg">
-          Web Developer Web Developer Web Developer Web Developer Web Developer
-          Web Developer Web Developer Web Developer
-        </h2>
+      <section id="hero" class="mt-0">
+        <div>
+          <h1 class="text-7xl mb-7">Web Developer</h1>
+          <h2 class="text-lg">
+            Web Developer Web Developer Web Developer Web Developer Web
+            Developer Web Developer Web Developer Web Developer
+          </h2>
+        </div>
+        <img class="w-fit" src="img/c.png" alt="" />
       </section>
       <!-- PROJECTS OVERVIEW -->
-      <section class="mt-20">
+      <section>
         <h2 class="text-center">Projects</h2>
         <div class="md:flex">
           <!-- PROJECT 1 -->
@@ -101,18 +104,81 @@
             <p class="projectcaption">Web development 1st semester</p>
           </div>
         </div>
-        <a href="">
-          <button class="arrow-button">
-            All Projects<span class="arrow"></span>
-          </button>
-        </a>
+        <div>
+          <a href="">
+            <button class="arrow-button">
+              All Projects<span class="arrow"></span>
+            </button>
+          </a>
+        </div>
+      </section>
+      <!-- PREFOOTER -->
+      <section class="flex justify-center bg-[#fcfcfc] py-20">
+        <div class="text-center">
+          <h4>It doesn't have to end here...</h4>
+          <div class="flex justify-center">
+            <p class="w-24 h-24 bg-[#647dff] rounded-full my-4"></p>
+          </div>
+          <p>
+            Email me at
+            <a href="mailto:emilie@webschultz.dk">emilie@webschultz.dk</a>
+            or fill out the <a href="/contact"> contact form</a> to get in
+            touch!
+          </p>
+        </div>
       </section>
     </main>
+    <footer>
+      <section>
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone <a href="tel:42423796">+45 42423796</a></li>
+          <li>
+            Private email
+            <a href="mailto:emilie@webschultz.dk">emilie@webschultz</a>
+          </li>
+          <li>
+            School email
+            <a href="mailto:emil07v9@stud.kea.dk">emil07v9@stud.kea.dk</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4>Social</h4>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/emiliekempelschultz/"
+            >
+              <img src="LI-in-Bug.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4>Portfolio</h4>
+        <ul>
+          <li>Made by Emilie Schultz</li>
+          <li>Build in SvelteKit</li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>
 
 <style>
-  /* knapper */
+  @media (min-width: 600px) {
+    footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer section {
+      justify-self: center;
+    }
+  }
+  /********** knapper *************/
   .arrow-button {
     display: flex;
     color: black;
@@ -121,9 +187,9 @@
     padding: 15px 40px;
     border-radius: 40px;
     transition: all 0.3s ease;
-    font-weight: bold;
     cursor: pointer;
     align-items: center;
+    font-weight: 500;
     font-size: 14px;
     margin-block: 20px;
   }
