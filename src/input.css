@@ -23,25 +23,25 @@ button {
 }
 
 h1 {
-  font-size: 10vw;
+  font-size: clamp(3.4rem, 2.4571rem + 4.0229vw, 10rem);
 }
 
 h2 {
-  font-size: 8vw;
+  font-size: clamp(2.4rem, 1.6rem + 3.4133vw, 8rem);
 }
 
 h3 {
-  font-size: 6vw;
+  font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 4rem);
 }
 
 h4 {
-  font-size: 4vw;
+  font-size: clamp(1.2rem, 1.0857rem + 0.4876vw, 2rem);
 }
 
 p,
 #tag,
 button {
-  font-size: 3vw;
+  font-size: clamp(0.9rem, 0.8571rem + 0.1829vw, 1.2rem);
 }
 
 a {
@@ -251,7 +251,6 @@ input[type="checkbox"] {
 /************ Zoom effect img  ************/
 .imgzoom {
   width: 100%;
-  height: 100%;
   overflow: hidden;
   margin: 0 auto;
 }
