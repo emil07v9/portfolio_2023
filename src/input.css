@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-body {
-  margin-inline: 4vw;
+section {
+  margin-inline: 8vw;
 }
 
 h1,
@@ -17,6 +17,7 @@ h2,
 h3,
 h4,
 p,
+li,
 #tag,
 button {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -31,17 +32,33 @@ h2 {
   font-size: clamp(2.375rem, 1.5rem + 2.8vw, 5rem);
 }
 
+h2#preheader {
+  font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 4rem);
+}
+
 h3 {
   font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 4rem);
+}
+
+h3#preheader {
+  font-size: clamp(1.2rem, 1.0857rem + 0.4876vw, 2rem);
 }
 
 h4 {
   font-size: clamp(1.2rem, 1.0857rem + 0.4876vw, 2rem);
 }
 
+h4.projectcaption {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.0857rem + 0.4876vw, 2rem);
+}
+
 p,
 #tag,
 button,
+li,
 .projectcaption {
   font-size: clamp(1rem, 0.9167rem + 0.2667vw, 1.25rem);
 }
@@ -50,7 +67,7 @@ a {
   color: #647dff;
 }
 
-p.projectcaption {
+.projectcaption {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
@@ -61,11 +78,25 @@ section {
   margin-bottom: 80px;
 }
 
+section#footermenu ul li {
+  font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 4rem);
+}
+
+#footermenu ul li a {
+  color: #ffff;
+}
+
 /*************** LOGO STYLING **************/
 a .JakartaLogo {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 5vw;
   color: #647dff;
+}
+
+a .JakartaLogoWhite {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 4vw;
+  color: #fff;
 }
 
 a .PTlogo {
@@ -74,6 +105,14 @@ a .PTlogo {
   font-style: italic;
   font-size: 5vw;
   color: #647dff;
+}
+
+a .PTlogoWhite {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4vw;
+  color: #fff;
 }
 
 /************* Header burgermenu + slider ******************/
@@ -265,6 +304,18 @@ input[type="checkbox"] {
   transform: scale(1.2);
 }
 
+@media (min-width: 600px) {
+  section#columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  #footermenu {
+    display: hidden;
+  }
+}
+
 @media (min-width: 700px) {
   /* LOGO STYLING */
   a .JakartaLogo {
@@ -288,9 +339,9 @@ input[type="checkbox"] {
     right: 90px;
   }
 
-  main {
+  /* main {
     margin-inline: 8vw;
-  }
+  } */
 }
 
 @media (min-width: 1000px) {

@@ -14,7 +14,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="mx-4">
       <figure class="pt-5">
         <a href="/src/index.html"
           ><span class="JakartaLogo"> Emilie</span>
@@ -55,7 +55,7 @@
         <img class="w-fit" src="img/c.png" alt="" />
       </section>
       <!-- PROJECTS OVERVIEW -->
-      <section class="w-full">
+      <section>
         <h2 class="text-center">Projects</h2>
         <div class="md:flex md:space-x-4">
           <!-- PROJECT 1 -->
@@ -113,7 +113,7 @@
         </div>
       </section>
       <!-- PREFOOTER -->
-      <section class="flex justify-center bg-[#fcfcfc] py-20">
+      <article class="flex justify-center bg-[#f2f2f2] py-20 w-full">
         <div class="text-center">
           <h4>It doesn't have to end here...</h4>
           <div class="flex justify-center">
@@ -126,7 +126,7 @@
             touch!
           </p>
         </div>
-      </section>
+      </article>
     </main>
     <footer>
       <section>
@@ -160,7 +160,7 @@
         <h4>Portfolio</h4>
         <ul>
           <li>Made by Emilie Schultz</li>
-          <li>Build in SvelteKit</li>
+          <li>Build in HTML and CSS + TailwindCSS</li>
         </ul>
       </section>
     </footer>
@@ -168,16 +168,6 @@
 </html>
 
 <style>
-  @media (min-width: 600px) {
-    footer {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    footer section {
-      justify-self: center;
-    }
-  }
   /********** knapper *************/
   .arrow-button {
     display: flex;
