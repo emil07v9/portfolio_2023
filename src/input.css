@@ -9,7 +9,7 @@
 }
 
 section {
-  margin-inline: 8vw;
+  padding-inline: 8vw;
 }
 
 h1,
@@ -351,6 +351,35 @@ input[type="checkbox"] {
 
   .menu-btn {
     right: 90px;
+  }
+
+  #allprojectscontainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  #projectcontainer1 {
+    position: relative;
+    flex-basis: 50%;
+  }
+
+  #projectcontainer1:hover {
+    flex-basis: 60%;
+  }
+
+  #projectcontainer2 {
+    position: relative;
+    flex-basis: 50%;
+  }
+
+  #projectcontainer2:hover {
+    flex-basis: 60%;
+  }
+
+  .transitionscale {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.5s;
   }
 
   /* main {

@@ -13,7 +13,7 @@
     />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-white to-yellow-100">
     <header class="mx-4">
       <figure class="pt-5">
         <a href="/src/index.html"
@@ -44,54 +44,84 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <section id="hero" class="mt-0">
-        <div>
-          <h1 class="text-7xl mb-7">Web Developer</h1>
+      <section id="hero" class="mt-0 h-screen">
+        <!-- <div>
+          <h1 id="channel-link" class="word fancy text-7xl mb-7">Portfolio</h1>
           <h2 class="text-lg">
             Web Developer Web Developer Web Developer Web Developer Web
             Developer Web Developer Web Developer Web Developer
           </h2>
         </div>
-        <img class="w-fit" src="img/c.png" alt="" />
+        <div class="roundedscroll">
+          <img class="rotate" src="/src/img/scrollcircle.svg" alt="" />
+          <img class="mouse" src="/src/img/mouse.svg" alt="" />
+        </div> -->
+  <div id="text"><div id="text">
+  <div class="line">
+    <p class="word">A</p>
+    <p class="word">Person</p>
+  </div>
+
+  <div class="line">
+    <p class="word">YouTube</p>
+    <p class="word">&</p>
+  </div>
+
+  <div class="line">
+    <p class="word">CodePendence</p>
+  </div>
+  
+  <div class="line">
+    <p 
+       id="channel-link" 
+       class="word fancy"
+    >
+      @Hyperplexed
+  </p>
+  </div>
+</div>
+
       </section>
       <!-- PROJECTS OVERVIEW -->
-      <section>
-        <h2 class="text-center">Projects</h2>
-        <div class="md:flex md:space-x-4">
+      <section class="mb-10 py-32 bg-black">
+        <h2 class="text-white">Projects</h2>
+        <div id="allprojectscontainer">
           <!-- PROJECT 1 -->
-          <div id="projectcontainer" class="mt-10">
+          <div id="projectcontainer1" class="transitionscale mt-10">
             <div class="imgzoom">
               <img src="img/c.png" alt="" />
             </div>
             <div class="mt-5">
               <span
                 id="tag"
-                class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
+                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
                 >label</span
               >
               <span
                 id="tag"
-                class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
+                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
                 >label</span
               >
             </div>
-            <h3 class="mt-2">Twitter Clone</h3>
-            <p class="projectcaption">Web development 1st semester</p>
+            <h3 class="mt-2 text-white">Twitter Clone</h3>
+            <p class="projectcaption text-white">
+              Web development 1st semester
+            </p>
           </div>
           <!-- PROJECT 2 -->
-          <div id="projectcontainer" class="mt-10">
+          <div id="projectcontainer2" class="transitionscale mt-10">
             <div class="imgzoom">
               <img src="img/c.png" alt="" />
             </div>
             <div class="mt-5">
               <span
                 id="tag"
-                class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
+                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
                 >label</span
               >
               <span
                 id="tag"
-                class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
+                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
                 >label</span
               >
               <span
@@ -100,16 +130,11 @@
                 >label</span
               >
             </div>
-            <h3 class="mt-2">Twitter Clone</h3>
-            <p class="projectcaption">Web development 1st semester</p>
+            <h3 class="mt-2 text-white">Twitter Clone</h3>
+            <p class="projectcaption text-white">
+              Web development 1st semester
+            </p>
           </div>
-        </div>
-        <div>
-          <a href="/src/projects.html">
-            <button class="arrow-button">
-              All Projects<span class="arrow"></span>
-            </button>
-          </a>
         </div>
       </section>
       <!-- PREFOOTER -->
@@ -122,8 +147,7 @@
           <p>
             Email me at
             <a href="mailto:emilie@webschultz.dk">emilie@webschultz.dk</a>
-            or fill out the <a href="/contact"> contact form</a> to get in
-            touch!
+            to get in touch!
           </p>
         </div>
       </article>
@@ -177,6 +201,163 @@
 </html>
 
 <style>
+@keyframes float {
+  from, to {
+    transform: translateY(-0%);
+  }
+  
+  50% {    
+    transform: translateY(-3%);
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 1000% center;
+  }
+  
+  to {
+    background-position: 0% center;
+  }
+}
+
+#hero {
+  height: 80vh;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.word {
+  color: white;
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-family: "Rubik", sans-serif;
+  margin: 0rem;
+  text-transform: uppercase;
+  transition: opacity 250ms ease;
+}
+
+#hero p {
+  text-decoration: none;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy span {
+  display: inline-block;
+}
+
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
+
+.fancy:hover > .outer > .inner {
+  animation: float 5s ease infinite;
+}
+
+.fancy:hover > .outer > .inner > .letter {
+  background: linear-gradient(
+    to right,
+    var(--blue),
+    var(--green),
+    var(--blue)
+  );
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  animation: background-pan 150s linear infinite;
+}
+
+.fancy:hover > .outer:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(3) {
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(4) {
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(5) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+
+.fancy:hover > .outer:nth-child(6) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(7) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(8) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(9) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(10) {
+  transform: translate(0%, 15%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(11) {
+  transform: translate(50%, -10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(12) {
+  transform: translate(120%, -30%) rotate(-10deg);
+}
+
+/* END HERO */
+
+
+  .roundedscroll {
+    position: relative;
+  }
+
+  .mouse {
+    position: absolute;
+    left: 47px;
+    top: 45px;
+  }
+
+  .rotate {
+    animation: animName 4s linear infinite;
+    /* width: 50px;
+    height: 50px; */
+    /* margin: 20px; */
+  }
+
+  @keyframes animName {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   /********** knapper *************/
   .arrow-button {
     display: flex;
@@ -235,3 +416,42 @@
     color: black;
   }
 </style>
+
+    <script>
+        const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+const enhance = id => {
+  const element = document.getElementById(id),
+        text = element.innerText.split("");
+  
+  element.innerText = "";
+  
+  text.forEach((value, index) => {
+    const outer = document.createElement("span");
+    
+    outer.className = "outer";
+    
+    const inner = document.createElement("span");
+    
+    inner.className = "inner";
+    
+    inner.style.animationDelay = `${rand(-5000, 0)}ms`;
+    
+    const letter = document.createElement("span");
+    
+    letter.className = "letter";
+    
+    letter.innerText = value;
+    
+    letter.style.animationDelay = `${index * 1000 }ms`;
+    
+    inner.appendChild(letter);    
+    
+    outer.appendChild(inner);    
+    
+    element.appendChild(outer);
+  });
+}
+
+enhance("channel-link");
+    </script>
