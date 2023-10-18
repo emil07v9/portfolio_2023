@@ -9,7 +9,7 @@
 }
 
 section {
-  padding-inline: 8vw;
+  padding-inline: 12vw;
 }
 
 h1,
@@ -127,7 +127,7 @@ header {
 }
 
 header + * {
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 .wrapper {

@@ -44,7 +44,7 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <section id="hero" class="mt-0 h-screen">
+      <section id="hero" class="mt-0 h-screen pb-10">
         <!-- <div>
           <h1 id="channel-link" class="word fancy text-7xl mb-7">Portfolio</h1>
           <h2 class="text-lg">
@@ -58,32 +58,35 @@
         </div> -->
   <div id="text"><div id="text">
   <div class="line">
-    <p class="word">A</p>
-    <p class="word">Person</p>
+    <p class="word">Welcome</p>
+    <p class="word">To</p>
+    <p class="word">My</p>
   </div>
 
   <div class="line">
-    <p class="word">YouTube</p>
-    <p class="word">&</p>
+    <p class="word">Web</p>
+    <p class="word">Development</p>
   </div>
 
   <div class="line">
-    <p class="word">CodePendence</p>
+    <p class="word">Portfolio</p>
+    <p class="word">☺</p>
   </div>
   
   <div class="line">
-    <p 
+    <p class="word">Go to</p>
+    <a href="/src/projects.html" 
        id="channel-link" 
        class="word fancy"
     >
-      @Hyperplexed
-  </p>
+      →Projects
+  </a>
   </div>
 </div>
 
       </section>
       <!-- PROJECTS OVERVIEW -->
-      <section class="mb-10 py-32 bg-black">
+      <section class=" bg-black py-48 mb-0">
         <h2 class="text-white">Projects</h2>
         <div id="allprojectscontainer">
           <!-- PROJECT 1 -->
@@ -126,7 +129,7 @@
               >
               <span
                 id="tag"
-                class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
+                class="text-black text-xs mr-2 px-2.5x py-0.5 rounded border-2 border-black"
                 >label</span
               >
             </div>
@@ -136,9 +139,14 @@
             </p>
           </div>
         </div>
+         <a href="">
+          <button class="arrow-button">
+            All Projects<span class="arrow"></span>
+          </button>
+        </a>
       </section>
       <!-- PREFOOTER -->
-      <article class="flex justify-center bg-[#f2f2f2] py-20 w-full">
+      <article class="flex justify-center py-20 w-full">
         <div class="text-center">
           <h4>It doesn't have to end here...</h4>
           <div class="flex justify-center">
@@ -222,8 +230,8 @@
 }
 
 #hero {
-  height: 80vh;
-  background-color: black;
+  height: 85vh;
+  background-color: none;
   margin: 0rem;
   overflow: hidden;
   display: grid;
@@ -236,9 +244,9 @@
 }
 
 .word {
-  color: white;
+  color: black;
   font-size: clamp(2rem, 8vw, 6rem);
-  font-family: "Rubik", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0rem;
   text-transform: uppercase;
   transition: opacity 250ms ease;
@@ -250,6 +258,10 @@
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
   opacity: 0.2;
+}
+
+.fancy {
+  color: #647dff;
 }
 
 .fancy span {
@@ -277,7 +289,7 @@
   );
   background-size: 1000%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: #647dff;
   animation: background-pan 150s linear infinite;
 }
 
@@ -361,9 +373,9 @@
   /********** knapper *************/
   .arrow-button {
     display: flex;
-    color: black;
+    color: white;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 15px 40px;
     border-radius: 40px;
     transition: all 0.3s ease;
@@ -377,8 +389,8 @@
   .arrow-button > .arrow {
     width: 8px;
     height: 8px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
     position: relative;
     transform: rotate(-45deg);
     margin: 0 6px;
@@ -403,7 +415,7 @@
   /* Animation af pilens spids */
   .arrow-button:hover > .arrow {
     transform: rotate(-45deg) translate(4px, 4px);
-    border-color: text-hover-color;
+    border-color: white;
   }
 
   /* Animation af pilens stamme */
@@ -413,7 +425,7 @@
   }
 
   .arrow-button:hover {
-    color: black;
+    color: white;
   }
 </style>
 
