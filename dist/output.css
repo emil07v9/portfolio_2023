@@ -718,6 +718,10 @@ video {
   width: 100%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-prose {
   max-width: 65ch;
 }
@@ -839,6 +843,11 @@ video {
 .py-48 {
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pb-10 {
