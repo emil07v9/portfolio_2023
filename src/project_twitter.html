@@ -28,15 +28,15 @@
           <label for="active" class="close" />
         </label>
         <div class="wrapper">
-          <ul>
-            <li class="active">
-              <a class="menu" href="/src/projects.html">PROJECTS</a>
+          <ul id="text">
+            <li class="active line">
+              <a id="channel-link1" class="menu fancy" href="/src/projects.html">PROJECTS</a>
             </li>
-            <li class="active">
-              <a class="menu" href="/src/about.html">ABOUT</a>
+            <li class="active line">
+              <a id="channel-link2" class="menu fancy" href="/src/about.html">ABOUT</a>
             </li>
-            <li class="active">
-              <a class="menu" href="/src/contact.html">CONTACT</a>
+            <li class="active line">
+              <a id="channel-link3" class="menu fancy" href="/src/contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -47,19 +47,19 @@
         <h1 class="slide-in-top">Twitter Clone</h1>
         <div class="grid grid-cols-3 md:flex md:space-x-20 lg:space-x-36 w-full mt-20">
           <div>
-            <p class="text-gray-400 text-sm font-bold">Project Focus</p>
+            <p class=" text-sm font-bold">Project Focus</p>
             <p class="text-sm">Full-Stack</p>
           </div>
           <div>
-            <p class="text-gray-400 text-sm font-bold">Year</p>
+            <p class=" text-sm font-bold">Year</p>
             <p class="text-sm">2023</p>
           </div>
           <div>
-            <p class="text-gray-400 text-sm font-bold">Educational Level</p>
+            <p class="text-sm font-bold">Educational Level</p>
             <p class="text-sm">Web Development, 1st semester</p>
           </div>
           <div>
-            <p class="text-gray-400 text-sm font-bold">Project Type</p>
+            <p class="text-sm font-bold">Project Type</p>
             <p class="text-sm">Single project</p>
           </div>
         </div>
@@ -72,7 +72,7 @@
       <section>
         <article class="md:grid md:grid-cols-5 md:gap-x-6 mb-20 md:mb-40">
             <div class="col-start-1 col-span-4 gap-x-10">
-              <h2 class="text-gray-400">Project Introduction</h2>
+              <h2 class="">Project Introduction</h2>
               <p class="projectcaption">The Twitter Clone Exam Project</p>
               <p class="mt-5 max-w-prose">In this project we were given the task to optimize the clients online profiling through
 				multimedia solutions. As a part of our solution, we created a new and improved website,
@@ -91,7 +91,7 @@
             </div>
       </section>
       <!-- IMAGE SLIDER -->
-      <section>
+      <section class="mb-56">
     <div class="container">
         <div class="carousel">
             <input type="radio" name="slides" checked="checked" id="slide-1">
@@ -191,21 +191,21 @@
         </div>
     </div>
 </section>
- <!-- PREFOOTER -->
-      <article class="flex justify-center bg-[#f2f2f2] py-20 w-full">
-        <div class="text-center">
-          <h4>It doesn't have to end here...</h4>
-          <div class="flex justify-center">
-            <p class="w-24 h-24 bg-[#647dff] rounded-full my-4"></p>
-          </div>
-          <p>
-            Email me at
-            <a href="mailto:emilie@webschultz.dk">emilie@webschultz.dk</a>
-            or fill out the <a href="/contact"> contact form</a> to get in
-            touch!
-          </p>
-        </div>
-      </article>
+<!-- NEXT PROJECT -->
+<article class="bg-black w-full">
+  <div id="text">
+  <div>
+    <a class="grid grid-cols-2 filter grayscale hover:filter-none" href="">
+    <div>
+      <img class=" w-full h-80 " src="/src/img/c.png" alt="">
+    </div>
+    <div class="line pl-5 items-center w-fit">
+      <p id="channel-link" class="word fancy">→Next Project</p>
+    </div>
+    </a>
+  </div>
+  </div>
+</article>
     </main>
         <!-- FOOTER -->
     <footer class="bg-black">
@@ -218,7 +218,7 @@
         </div>
       </figure>
       <section id="columns" class="mb-0 pb-20 mt-10">
-        <section id="footermenu" class="text-center">
+        <section id="footermenu" class="text-center px-0">
           <ul>
             <li class="active mb-4 hover:underline">
               <a class="menu" href="/src/projects.html">Projects</a>
@@ -231,13 +231,13 @@
             </li>
           </ul>
         </section>
-        <section id="footercontact" class="text-white text-center">
+        <section id="footercontact" class="text-white text-center px-0">
           <h4>Contact me</h4>
           <h4 class="projectcaption">
             <a href="mailto:emilie@webschultz.dk">emilie@webschultz.dk</a>
           </h4>
         </section>
-        <section id="footersocials" class="text-white text-center">
+        <section id="footersocials" class="text-white text-center px-0">
           <h4>Socials</h4>
           <ul class="flex justify-center pt-2">
             <li>
@@ -443,3 +443,5 @@
     }
   }
 </style>
+
+<script src="/src/script.js"></script>

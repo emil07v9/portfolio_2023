@@ -14,7 +14,7 @@
     <title>Portfolio</title>
   </head>
   <body class="bg-gradient-to-r from-white to-yellow-100">
-    <header class="mx-4">
+<header class="mx-4">
       <figure class="pt-5">
         <a href="/src/index.html"
           ><span class="JakartaLogo"> Emilie</span>
@@ -28,15 +28,15 @@
           <label for="active" class="close" />
         </label>
         <div class="wrapper">
-          <ul>
-            <li class="active">
-              <a class="menu" href="/src/projects.html">PROJECTS</a>
+          <ul id="text">
+            <li class="active line">
+              <a id="channel-link1" class="menu fancy" href="/src/projects.html">PROJECTS</a>
             </li>
-            <li class="active">
-              <a class="menu" href="/src/about.html">ABOUT</a>
+            <li class="active line">
+              <a id="channel-link2" class="menu fancy" href="/src/about.html">ABOUT</a>
             </li>
-            <li class="active">
-              <a class="menu" href="/src/contact.html">CONTACT</a>
+            <li class="active line">
+              <a id="channel-link3" class="menu fancy" href="/src/contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -44,18 +44,8 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <section id="hero" class="mt-0 h-screen pb-10">
-        <!-- <div>
-          <h1 id="channel-link" class="word fancy text-7xl mb-7">Portfolio</h1>
-          <h2 class="text-lg">
-            Web Developer Web Developer Web Developer Web Developer Web
-            Developer Web Developer Web Developer Web Developer
-          </h2>
-        </div>
-        <div class="roundedscroll">
-          <img class="rotate" src="/src/img/scrollcircle.svg" alt="" />
-          <img class="mouse" src="/src/img/mouse.svg" alt="" />
-        </div> -->
+  <section class="relative px-0 mt-10">
+  <article id="hero" class="mt-0 h-screen pb-10">
   <div id="text"><div id="text">
   <div class="line">
     <p class="word">Welcome</p>
@@ -83,14 +73,28 @@
   </a>
   </div>
 </div>
-
-      </section>
+</article>
+<div class="flex justify-center xl:hidden sm:mt-10 sm:pt-10">
+			<a class="slide-in-bottom puls text-2xl" href="#allprojectscontainer"
+				>↓</a
+			>
+		</div>
+  <article class="absolute hidden xl:flex right-16 top-3/4">
+        <div class="roundedscroll">
+          <a class="slide-in-bottom" href="#allprojectscontainer">
+          <img class="rotate" src="/src/img/scrollcircle.svg" alt="" />
+          <img class="mouse" src="/src/img/mouse.svg" alt="" />
+          </a>
+        </div>
+      </article>
+</section>
       <!-- PROJECTS OVERVIEW -->
-      <section class=" bg-black py-48 mb-0">
+      <section class=" bg-black pt-32 pb-28 mb-0">
         <h2 class="text-white">Projects</h2>
         <div id="allprojectscontainer">
           <!-- PROJECT 1 -->
           <div id="projectcontainer1" class="transitionscale mt-10">
+            <a href="">
             <div class="imgzoom">
               <img src="img/c.png" alt="" />
             </div>
@@ -110,9 +114,11 @@
             <p class="projectcaption text-white">
               Web development 1st semester
             </p>
+            </a>
           </div>
           <!-- PROJECT 2 -->
           <div id="projectcontainer2" class="transitionscale mt-10">
+            <a href="">
             <div class="imgzoom">
               <img src="img/c.png" alt="" />
             </div>
@@ -138,6 +144,7 @@
               Web development 1st semester
             </p>
           </div>
+          </a>
         </div>
          <a href="">
           <button class="arrow-button">
@@ -145,20 +152,6 @@
           </button>
         </a>
       </section>
-      <!-- PREFOOTER -->
-      <article class="flex justify-center py-20 w-full">
-        <div class="text-center">
-          <h4>It doesn't have to end here...</h4>
-          <div class="flex justify-center">
-            <p class="w-24 h-24 bg-[#647dff] rounded-full my-4"></p>
-          </div>
-          <p>
-            Email me at
-            <a href="mailto:emilie@webschultz.dk">emilie@webschultz.dk</a>
-            to get in touch!
-          </p>
-        </div>
-      </article>
     </main>
     <!-- FOOTER -->
     <footer class="bg-black">
@@ -209,140 +202,6 @@
 </html>
 
 <style>
-@keyframes float {
-  from, to {
-    transform: translateY(-0%);
-  }
-  
-  50% {    
-    transform: translateY(-3%);
-  }
-}
-
-@keyframes background-pan {
-  from {
-    background-position: 1000% center;
-  }
-  
-  to {
-    background-position: 0% center;
-  }
-}
-
-#hero {
-  height: 85vh;
-  background-color: none;
-  margin: 0rem;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-}
-
-.line {
-  display: flex;
-  justify-content: space-between;
-}
-
-.word {
-  color: black;
-  font-size: clamp(2rem, 8vw, 6rem);
-  font-family: "Plus Jakarta Sans", sans-serif;
-  margin: 0rem;
-  text-transform: uppercase;
-  transition: opacity 250ms ease;
-}
-
-#hero p {
-  text-decoration: none;
-}
-
-#text:has(.fancy:hover) .word:not(.fancy:hover) {
-  opacity: 0.2;
-}
-
-.fancy {
-  color: #647dff;
-}
-
-.fancy span {
-  display: inline-block;
-}
-
-.fancy > .outer {
-  transition: transform 350ms ease;
-}
-
-.fancy:hover > .outer {
-  transition-duration: 800ms;
-}
-
-.fancy:hover > .outer > .inner {
-  animation: float 5s ease infinite;
-}
-
-.fancy:hover > .outer > .inner > .letter {
-  background: linear-gradient(
-    to right,
-    var(--blue),
-    var(--green),
-    var(--blue)
-  );
-  background-size: 1000%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #647dff;
-  animation: background-pan 150s linear infinite;
-}
-
-.fancy:hover > .outer:nth-child(1) {
-  transform: translate(-80%, 60%) rotate(8deg);
-}
-
-.fancy:hover > .outer:nth-child(2) {
-  transform: translate(-40%, 20%) rotate(4deg);
-}
-
-.fancy:hover > .outer:nth-child(3) {
-  transform: translate(-10%, 60%) rotate(-6deg);
-}
-
-.fancy:hover > .outer:nth-child(4) {
-  transform: translate(0%, 8%) rotate(-8deg);
-}
-
-.fancy:hover > .outer:nth-child(5) {
-  transform: translate(0%, -20%) rotate(5deg);
-}
-
-.fancy:hover > .outer:nth-child(6) {
-  transform: translate(0%, 20%) rotate(-3deg);
-}
-
-.fancy:hover > .outer:nth-child(7) {
-  transform: translate(0%, -40%) rotate(-5deg);
-}
-
-.fancy:hover > .outer:nth-child(8) {
-  transform: translate(0%, 15%) rotate(10deg);
-}
-
-.fancy:hover > .outer:nth-child(9) {
-  transform: translate(0%, -50%) rotate(8deg);
-}
-
-.fancy:hover > .outer:nth-child(10) {
-  transform: translate(0%, 15%) rotate(-6deg);
-}
-
-.fancy:hover > .outer:nth-child(11) {
-  transform: translate(50%, -10%) rotate(-3deg);
-}
-
-.fancy:hover > .outer:nth-child(12) {
-  transform: translate(120%, -30%) rotate(-10deg);
-}
-
-/* END HERO */
-
 
   .roundedscroll {
     position: relative;
@@ -355,13 +214,13 @@
   }
 
   .rotate {
-    animation: animName 4s linear infinite;
+    animation: rotation 4s linear infinite;
     /* width: 50px;
     height: 50px; */
     /* margin: 20px; */
   }
 
-  @keyframes animName {
+  @keyframes rotation {
     0% {
       transform: rotate(0deg);
     }
@@ -370,100 +229,11 @@
     }
   }
 
-  /********** knapper *************/
-  .arrow-button {
-    display: flex;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 15px 40px;
-    border-radius: 40px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    margin-block: 20px;
-  }
-
-  .arrow-button > .arrow {
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    position: relative;
-    transform: rotate(-45deg);
-    margin: 0 6px;
-    transition: all 0.3s ease;
-  }
-
-  .arrow-button > .arrow::before {
-    display: block;
-    background-color: currentColor;
-    width: 3px;
-    transform-origin: bottom right;
-    height: 2px;
-    position: absolute;
-    opacity: 0;
-    bottom: calc(-2px / 2);
-    transform: rotate(45deg);
-    transition: all 0.3s ease;
-    content: "";
-    right: 0;
-  }
-
-  /* Animation af pilens spids */
-  .arrow-button:hover > .arrow {
-    transform: rotate(-45deg) translate(4px, 4px);
-    border-color: white;
-  }
-
-  /* Animation af pilens stamme */
-  .arrow-button:hover > .arrow::before {
-    opacity: 1;
-    width: 15px;
-  }
-
-  .arrow-button:hover {
-    color: white;
+  @media (min-width: 700px) {  
+#hero {
+  height: 85vh;
+}
   }
 </style>
 
-    <script>
-        const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const enhance = id => {
-  const element = document.getElementById(id),
-        text = element.innerText.split("");
-  
-  element.innerText = "";
-  
-  text.forEach((value, index) => {
-    const outer = document.createElement("span");
-    
-    outer.className = "outer";
-    
-    const inner = document.createElement("span");
-    
-    inner.className = "inner";
-    
-    inner.style.animationDelay = `${rand(-5000, 0)}ms`;
-    
-    const letter = document.createElement("span");
-    
-    letter.className = "letter";
-    
-    letter.innerText = value;
-    
-    letter.style.animationDelay = `${index * 1000 }ms`;
-    
-    inner.appendChild(letter);    
-    
-    outer.appendChild(inner);    
-    
-    element.appendChild(outer);
-  });
-}
-
-enhance("channel-link");
-    </script>
+<script src="/src/script.js"></script>

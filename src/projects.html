@@ -28,15 +28,21 @@
           <label for="active" class="close" />
         </label>
         <div class="wrapper">
-          <ul>
-            <li class="active">
-              <a class="menu" href="/src/projects.html">PROJECTS</a>
+          <ul id="text">
+            <li class="active line">
+              <a id="channel-link1" class="menu fancy" href="/src/projects.html"
+                >PROJECTS</a
+              >
             </li>
-            <li class="active">
-              <a class="menu" href="/src/about.html">ABOUT</a>
+            <li class="active line">
+              <a id="channel-link2" class="menu fancy" href="/src/about.html"
+                >ABOUT</a
+              >
             </li>
-            <li class="active">
-              <a class="menu" href="/src/contact.html">CONTACT</a>
+            <li class="active line">
+              <a id="channel-link3" class="menu fancy" href="/src/contact.html"
+                >CONTACT</a
+              >
             </li>
           </ul>
         </div>
@@ -49,52 +55,56 @@
         <div id="allprojectscontainer">
           <!-- PROJECT 1 -->
           <div id="projectcontainer1" class="transitionscale mt-10">
-            <div class="imgzoom">
-              <img src="img/c.png" alt="" />
-            </div>
-            <div class="mt-5">
-              <span
-                id="tag"
-                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
-                >label</span
-              >
-              <span
-                id="tag"
-                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
-                >label</span
-              >
-            </div>
-            <h3 class="mt-2 text-white">Twitter Clone</h3>
-            <p class="projectcaption text-white">
-              Web development 1st semester
-            </p>
+            <a href="/src/project_twitter.html">
+              <div class="imgzoom">
+                <img src="img/c.png" alt="" />
+              </div>
+              <div class="mt-5">
+                <span
+                  id="tag"
+                  class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
+                  >label</span
+                >
+                <span
+                  id="tag"
+                  class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
+                  >label</span
+                >
+              </div>
+              <h3 class="mt-2 text-white">Twitter Clone</h3>
+              <p class="projectcaption text-white">
+                Web development 1st semester
+              </p>
+            </a>
           </div>
           <!-- PROJECT 2 -->
           <div id="projectcontainer2" class="transitionscale mt-10">
-            <div class="imgzoom">
-              <img src="img/c.png" alt="" />
-            </div>
-            <div class="mt-5">
-              <span
-                id="tag"
-                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
-                >label</span
-              >
-              <span
-                id="tag"
-                class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
-                >label</span
-              >
-              <span
-                id="tag"
-                class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
-                >label</span
-              >
-            </div>
-            <h3 class="mt-2 text-white">Twitter Clone</h3>
-            <p class="projectcaption text-white">
-              Web development 1st semester
-            </p>
+            <a href="">
+              <div class="imgzoom">
+                <img src="img/c.png" alt="" />
+              </div>
+              <div class="mt-5">
+                <span
+                  id="tag"
+                  class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
+                  >label</span
+                >
+                <span
+                  id="tag"
+                  class="text-white text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-white"
+                  >label</span
+                >
+                <span
+                  id="tag"
+                  class="text-black text-xs mr-2 px-2.5 py-0.5 rounded border-2 border-black"
+                  >label</span
+                >
+              </div>
+              <h3 class="mt-2 text-white">Twitter Clone</h3>
+              <p class="projectcaption text-white">
+                Web development 1st semester
+              </p>
+            </a>
           </div>
         </div>
       </section>
@@ -110,7 +120,7 @@
         </div>
       </figure>
       <section id="columns" class="mb-0 pb-20 mt-10">
-        <section id="footermenu" class="text-center">
+        <section id="footermenu" class="text-center px-0">
           <ul>
             <li class="active mb-4 hover:underline">
               <a class="menu" href="/src/projects.html">Projects</a>
@@ -123,13 +133,13 @@
             </li>
           </ul>
         </section>
-        <section id="footercontact" class="text-white text-center">
+        <section id="footercontact" class="text-white text-center px-0">
           <h4>Contact me</h4>
           <h4 class="projectcaption">
             <a href="mailto:emilie@webschultz.dk">emilie@webschultz.dk</a>
           </h4>
         </section>
-        <section id="footersocials" class="text-white text-center">
+        <section id="footersocials" class="text-white text-center px-0">
           <h4>Socials</h4>
           <ul class="flex justify-center pt-2">
             <li>
@@ -194,3 +204,5 @@
     }
   }
 </style>
+
+<script src="/src/script.js"></script>
