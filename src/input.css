@@ -19,8 +19,7 @@ section {
 }
 
 a,
-button,
-li {
+button {
   cursor: pointer;
 }
 
@@ -40,7 +39,8 @@ h1 {
   font-size: clamp(3.4rem, 2.4571rem + 4.0229vw, 10rem);
 }
 
-h2 {
+h2,
+.nextproject {
   /* font-size: clamp(2.4rem, 1.6rem + 3.4133vw, 8rem); */
   font-size: clamp(2.375rem, 1.5rem + 2.8vw, 5rem);
 }
