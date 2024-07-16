@@ -531,25 +531,29 @@ input[type="checkbox"] {
     padding-inline: 12vw;
   }
 
+  footer section#footerlogo {
+    padding-inline: 4vw;
+  }
+
   section#columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
   }
 
-  #footermenu {
+  #footerlogo {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-inline: 0;
   }
 
-  #footercontact {
+  #footermenu {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-inline: 0;
   }
 
-  #footersocials {
+  #footercontact {
     grid-column: 3/4;
     grid-row: 1/2;
     margin-inline: 0;
