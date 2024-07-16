@@ -90,9 +90,9 @@ section#footermenu ul li {
   font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 4rem);
 }
 
-#footermenu ul li a {
+/* #footermenu ul li a {
   color: #ffff;
-}
+} */
 
 /****** KNAPPER ********/
 .arrow-button {
