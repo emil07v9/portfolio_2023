@@ -86,8 +86,9 @@ a {
   font-style: italic;
 }
 
-section#footermenu ul li {
-  font-size: clamp(1.5rem, 1.1429rem + 1.5238vw, 4rem);
+section#footermenu ul li,
+section#footercontact h4 {
+  font-size: clamp(1.5rem, 1.4286rem + 0.3048vw, 2rem);
 }
 
 /* #footermenu ul li a {
@@ -456,7 +457,7 @@ input[type="checkbox"] {
   background: linear-gradient(to right, var(--blue), var(--green), var(--blue));
   background-size: 1000%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #647dff;
+  -webkit-text-fill-color: #f54501;
   animation: background-pan 150s linear infinite;
 }
 
