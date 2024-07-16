@@ -97,9 +97,9 @@ section#footermenu ul li {
 /****** KNAPPER ********/
 .arrow-button {
   display: flex;
-  color: white;
+  color: #f54501;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #f54501;
   padding: 15px 40px;
   border-radius: 40px;
   transition: all 0.3s ease;
@@ -113,8 +113,8 @@ section#footermenu ul li {
 .arrow-button > .arrow {
   width: 8px;
   height: 8px;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border-right: 2px solid #f54501;
+  border-bottom: 2px solid #f54501;
   position: relative;
   transform: rotate(-45deg);
   margin: 0 6px;
@@ -139,7 +139,7 @@ section#footermenu ul li {
 /* Animation af pilens spids */
 .arrow-button:hover > .arrow {
   transform: rotate(-45deg) translate(4px, 4px);
-  border-color: white;
+  border-color: #f54501;
 }
 
 /* Animation af pilens stamme */
@@ -149,7 +149,7 @@ section#footermenu ul li {
 }
 
 .arrow-button:hover {
-  color: white;
+  color: #f54501;
 }
 
 /*************** LOGO STYLING **************/
