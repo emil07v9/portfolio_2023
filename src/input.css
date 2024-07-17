@@ -433,6 +433,19 @@ input[type="checkbox"] {
   opacity: 0.2;
 }
 
+#hero {
+  min-height: 100vh; /* Ensuring hero section is at least the height of the viewport */
+  overflow: visible; /* Allow overflow for the hero section */
+}
+
+#text {
+  overflow: visible;
+}
+
+.line {
+  overflow: visible; /* Ensure each line allows overflow */
+}
+
 .fancy {
   color: #f54501;
 }
