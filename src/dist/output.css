@@ -702,8 +702,8 @@ video {
   height: 20rem;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[160vh\] {
+  height: 160vh;
 }
 
 .w-10 {
