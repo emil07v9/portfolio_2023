@@ -1,0 +1,4 @@
+[build]
+  base = "src"        # Set the base directory appropriately
+  command = "npm run build"
+  publish = "dist"   # Set the publish directory to src/dist
