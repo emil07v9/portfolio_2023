@@ -796,9 +796,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#444545\] {
+.bg-\[\#121212\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(68 69 69 / var(--tw-bg-opacity));
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#E5E8FF\] {
@@ -1174,7 +1174,7 @@ header + * {
   height: 100%;
   width: 100%;
   z-index: 100;
-  background: black;
+  background: #e5e8ff;
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
@@ -1218,7 +1218,7 @@ header + * {
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   height: 2px;
   width: 80%;
-  background: white;
+  background: black;
 }
 
 .menu-btn:before {
@@ -1245,18 +1245,18 @@ header + * {
 
 #active:checked + .menu-btn:before {
   transform: rotate(45deg);
-  border-color: white;
+  border-color: black;
 }
 
 #active:checked + .menu-btn:after {
   transform: rotate(-45deg);
-  border-color: white;
+  border-color: black;
 }
 
 .wrapper ul li {
   height: 10%;
   margin: 15px 0;
-  color: white;
+  color: black;
 }
 
 .wrapper ul li a {
@@ -1276,7 +1276,8 @@ header + * {
 }
 
 .wrapper ul li a:hover {
-  color: white !important;
+  text-decoration: underline;
+  color: #f54501 !important;
 }
 
 /**** Hover lilla menu ****/
