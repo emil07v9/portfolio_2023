@@ -1412,7 +1412,7 @@ input[type="checkbox"] {
 }
 
 #hero {
-  min-height: 100vh; /* Ensuring hero section is at least the height of the viewport */
+  min-height: 90vh; /* Ensuring hero section is at least the height of the viewport */
   overflow: visible; /* Allow overflow for the hero section */
 }
 
