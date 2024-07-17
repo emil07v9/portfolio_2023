@@ -406,7 +406,7 @@ input[type="checkbox"] {
   height: 60vh;
   background-color: none;
   margin: 0rem;
-  overflow: hidden;
+  overflow: visible;
   display: grid;
   place-items: center;
 }
@@ -431,11 +431,6 @@ input[type="checkbox"] {
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
   opacity: 0.2;
-}
-
-#hero {
-  min-height: 90vh; /* Ensuring hero section is at least the height of the viewport */
-  overflow: visible; /* Allow overflow for the hero section */
 }
 
 #text {
